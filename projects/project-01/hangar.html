@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangar</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="right">
+      <iframe id="inv" src="inventory.html" width="160" height="120"></iframe>
+    </div>
+
+    <h1>Hangar</h1>
+    <img class="shrink-to-viewport" src="assets/hangar.jpg" alt="Hangar">
+    <p>You race to the hangar. Ships hum in standby mode. Without the shard, escape means mission failure… but survival is tempting. Do you continue the heist or abort?</p>
+
+    <table>
+      <thead><tr><th>Ship</th><th>Fuel</th><th>Range</th></tr></thead>
+      <tbody>
+        <tr><td>Aquila</td><td>40%</td><td>Low</td></tr>
+        <tr><td>Manta</td><td>80%</td><td>Medium</td></tr>
+        <tr><td>Raven</td><td>100%</td><td>High</td></tr>
+      </tbody>
+    </table>
+
+    <p><a id="back" class="button" href="#">Back to Hub</a></p>
+  </div>
+
+  <script>
+    const q = window.location.search || '';
+    document.getElementById('inv').src += q;
+    document.getElementById('back').href = 'hub.html' + q;
+  </script>
+</body>
+</html>

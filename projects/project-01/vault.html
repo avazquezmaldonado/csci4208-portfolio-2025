@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vault</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="right">
+      <iframe id="inv" src="inventory.html" width="160" height="120"></iframe>
+    </div>
+
+    <h1>Vault Door</h1>
+    <div class="background-image-without-repeat outline padding"></div>
+    <p>A massive blast door seals the shard inside. A keypad flickers. You recall the hint from maintenance logs: “keep doors locked.” Enter the correct phrase, or alarms will sound.</p>
+
+    <label for="phrase">Pass phrase:</label>
+    <input id="phrase" type="text" placeholder="two words">
+    <button id="unlock" class="button">Unlock</button>
+    <p class="outline padding">Use lowercase, space between words.</p>
+
+    <audio id="alarm">
+      <source src="assets/alarm.wav" type="audio/wav">
+    </audio>
+  </div>
+
+  <script>
+    const q = window.location.search || '';
+    document.getElementById('inv').src += q;
+
+    document.getElementById('unlock').addEventListener('click', function () {
+      const v = document.getElementById('phrase').value.trim().toLowerCase();
+      if (v === 'doors locked') {
+        window.location.href = 'success.html' + q;
+      } else {
+        try { const a = document.getElementById('alarm'); a.currentTime = 0; a.play(); } catch(e){}
+        document.body.innerHTML = `
+          <div class="container">
+            <h1 class="bold">Access Denied</h1>
+            <img class="shrink-to-viewport" src="assets/fail.gif" alt="Alarm">
+            <p>Wrong phrase. Mission failed.</p>
+            <p><a class="button" href="index.html">Try Again</a></p>
+          </div>
+        `;
+      }
+    });
+  </script>
+</body>
+</html>
