@@ -1,5 +1,5 @@
 name: Sync labels
-
+#reindex
 on:
   workflow_dispatch: {}
   push:
