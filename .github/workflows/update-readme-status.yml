@@ -1,5 +1,5 @@
 name: Update README Submission Table
-
+#reindex
 on:
   workflow_dispatch: {}
   schedule:
@@ -186,3 +186,4 @@ jobs:
         with:
           add: ${{ steps.gen.outputs.path || 'README.md' }}
           message: "docs: auto-update submission table (Item | Key | Status)"
+
