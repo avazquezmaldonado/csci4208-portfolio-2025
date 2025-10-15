@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hub</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Operations Hub</h1>
+    <img class="shrink-to-viewport" src="assets/hub.jpg" alt="Operations Hub">
+    <p>You slip into the starport’s central hub. Security drones are near.  
+       The vault lies heavily protected, and the hangar leads to an escape shuttle.  
+       Which path do you risk?</p>
+    <a class="button" href="vault.html">Vault</a>
+    <a class="button" href="hangar.html">Hangar</a>
+  </div>
+
+  <script>
+    const q = window.location.search || '';
+    document.getElementById('inv').src += q;
+    document.getElementById('toVault').href  = 'vault.html'  + q;
+    document.getElementById('toHangar').href = 'hangar.html' + q;
+  </script>
+</body>
+</html>

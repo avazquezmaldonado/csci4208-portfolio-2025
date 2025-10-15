@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hi-Lo Game (Final - Graphics + Timer)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; text-align:center; }
+      .row { display:flex; gap:16px; justify-content:center; align-items:center; margin:12px 0; }
+      img.btn { cursor:pointer; user-select:none; }
+    </style>
+  </head>
+  <body>
+    <h1>Hi-Lo Guess Game</h1>
+    <p>There is a number between 000-999.</p>
+    <p id="attempts"><strong>Time left:</strong> 30</p>
+    <span>Enter a Guess:</span>
+
+    <div class="row">
+      <img src="assets/button-up.gif" id="up-100s" class="btn" width="100" alt="Up 100s" />
+      <img src="assets/button-up.gif" id="up-10s"  class="btn" width="100" alt="Up 10s" />
+      <img src="assets/button-up.gif" id="up-1s"   class="btn" width="100" alt="Up 1s" />
+    </div>
+
+    <div class="row">
+      <img src="assets/0.png" id="digit-100s" width="100" alt="Hundreds Digit" />
+      <img src="assets/0.png" id="digit-10s"  width="100" alt="Tens Digit" />
+      <img src="assets/0.png" id="digit-1s"   width="100" alt="Ones Digit" />
+    </div>
+
+    <div class="row">
+      <img src="assets/button-down.gif" id="down-100s" class="btn" width="100" alt="Down 100s" />
+      <img src="assets/button-down.gif" id="down-10s"  class="btn" width="100" alt="Down 10s" />
+      <img src="assets/button-down.gif" id="down-1s"   class="btn" width="100" alt="Down 1s" />
+    </div>
+
+    <div class="row">
+      <img src="assets/button-enter.png" id="guess-button" class="btn" width="300" alt="Enter Guess" />
+    </div>
+
+    <script src="scripts/Guess.js"></script>
+    <script src="scripts/views.js"></script>
+    <script src="scripts/model.js"></script>
+    <script src="scripts/controllers.js"></script>
+  </body>
+</html>

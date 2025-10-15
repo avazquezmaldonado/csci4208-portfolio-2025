@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory</title>
+  <style>
+    body{
+      margin:0;
+      background:#0f0f0f;
+      color:#eee;
+      font:13px Arial,Helvetica,sans-serif;
+      padding:6px;
+    }
+    ul{
+      margin:6px 0 0 18px;
+    }
+    h4{
+      margin:0 0 6px
+    }
+  </style>
+</head>
+<body>
+  <h4>Inventory</h4>
+  <ul id="list"></ul>
+
+  <script>
+    const ul = document.getElementById('list');
+    const qs = new URLSearchParams(window.location.search);
+    for (const [k,v] of qs.entries()){
+      if (v && v !== '0'){
+        const li = document.createElement('li');
+        li.textContent = k;
+        ul.appendChild(li);
+      }
+    }
+  </script>
+</body>
+</html>
