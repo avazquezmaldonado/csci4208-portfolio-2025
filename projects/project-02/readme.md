@@ -10,14 +10,12 @@ A lightweight, offline-friendly task tracker. Add and complete tasks directly in
 - One-click cloud save: writes a small, non-sensitive summary to JSONBin
 
 ## Screenshots / Demo
-> Place screenshots or GIFs under `docs/media/` and update below when available.
-
 - ![Home](docs/media/home.png)
 - ![Analytics](docs/media/analytics.png)
-- Demo video (60–120s): <ADD_LINK_HERE>
+- Demo video (60–120s): <[https://drive.google.com/file/d/1JWMdyuPVmKM_6jyz31GAl0WOgMn8y7ZQ/view?usp=sharing]>
 
 ## Live Demo / Install & Run
-- **Live demo (GitHub Pages):** https://<your-username>.github.io/<repo-name>/
+- **Live demo (GitHub Pages):** https://<avazquezmaldonado>.github.io/<csci4208-portfolio-2025>/
   - (SPA uses hash routing so deep links work.)
 - **Local run (fallback):**
   1. Open the folder in VS Code
@@ -42,3 +40,28 @@ A lightweight, offline-friendly task tracker. Add and complete tasks directly in
     { "userId": 1, "id": 1, "title": "delectus aut autem", "completed": false },
     ...
   ]
+
+## License / Credits
+
+This project was developed as part of **CSCI 4208 – Web Applications** at the **University of New Orleans**.  
+All code and assets are for educational use only.
+
+**Assets and libraries used:**
+- [MVP.css](https://andybrewer.github.io/mvp/) for minimalist styling  
+- [JSONBin.io](https://jsonbin.io) for REST storage and testing  
+- Vanilla JavaScript (ES Modules), HTML, and CSS
+
+© 2025 Angel Vazquez. All rights reserved.
+
+---
+
+## Developer Docs / Links
+
+- [docs/architecture_sketch.md](./docs/architecture_sketch.md)  
+- [docs/endpoints.md](./docs/endpoints.md)  
+- [docs/jsonbin_schema.md](./docs/jsonbin_schema.md)  
+- [docs/roadmap.md](./docs/roadmap.md)  
+- [docs/pitch.md](./docs/pitch.md)  
+- [docs/dod-sprint1.md](./docs/dod-sprint1.md)  
+- [docs/dod-sprint2.md](./docs/dod-sprint2.md)  
+- [docs/dod-sprint3.md](./docs/dod-sprint3.md)
