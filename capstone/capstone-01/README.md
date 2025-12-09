@@ -1,68 +1,56 @@
 # Project Proposal — capstone-01
 
 **Team repo:** https://github.com/avazquezmaldonado/CardMatch  
-**Project (v2) board:** https://github.com/users/avazquezmaldonado/projects/2  
-**Live demo (if applicable):** N/A
+**Project (v2) board:** https://github.com/avazquezmaldonado/CardMatch/projects/1  
+**Live demo / recording (if applicable):** Demo available after capstone-09
 
 ## Deliverables for this phase
-- Team roster (solo)
-- Project idea
-- Abstract
-- Links to team repo & project board
 
-## Summary
+- Team roster and project title clearly defined
+- High-level abstract of the project vision and goals
+- Problem statement and proposed solution
+- Initial scope and feature list
+- Technology stack selection justified
+- Timeline and milestones overview
 
-**Project Name:** CardMatch  
-**Developer:** Angel Vazquez Maldonado  
+## Summary (what we produced)
 
-CardMatch is a full-stack web application that recommends optimal credit cards to a user based on their spending profile, credit score, and recent credit activity (e.g., Chase 5/24 rule). The system evaluates existing cards the user owns, estimates monthly/annual rewards, and recommends the best card or card-combo for maximizing value.
+**CardMatch** is a credit card recommendation engine that helps users discover the best cards based on their financial profile and spending patterns.
 
-This milestone includes the project abstract, problem definition, proposed solution, and the initial project board setup.
+**Team:** Angel Vazquez Maldonado (solo capstone project)
 
-### Abstract
-CardMatch helps users understand which credit cards provide the highest return based on their financial habits. By combining internal rules, reward-calculation logic, and user inputs, CardMatch identifies the most suitable cards and filters out options the user is not eligible for (credit score and 5/24). This proposal outlines the problem domain, solution overview, and planned features.
+**Problem:** Choosing optimal credit cards is difficult. Users struggle to compare card features, estimate rewards based on personal spending, and filter for eligibility (credit score, 5/24 rule). Manual comparison of dozens of cards is time-consuming and error-prone.
 
-### Problem Statement
-Choosing the right credit card is difficult due to varying reward structures, annual fees, eligibility requirements, and policies like the Chase 5/24 rule. Users rarely know which cards maximize their rewards or whether they even qualify.
+**Solution:** An intelligent recommendation system that analyzes user profile and spending to return:
+- Best card for each spending category
+- Estimated annual rewards per card
+- Top 3 overall card recommendations
+- Eligibility filtering based on credit score and account history
 
-### Solution Summary
-CardMatch simplifies the process by:
-- Collecting user spending categories  
-- Collecting credit score range  
-- Tracking cards opened in the last 24 months  
-- Tracking cards the user currently owns  
-- Applying eligibility filters  
-- Calculating estimated rewards  
-- Recommending the best cards and combinations  
+**Key Features Proposed:**
+- User profile input (credit score, accounts opened in 24mo, student status, preferences)
+- Monthly spending by category (groceries, dining, travel, other)
+- Real-time scoring and recommendations
+- Eligibility filtering (credit score thresholds, Chase 5/24 rule)
+- Export recommendations as JSON
+- Support for 20+ credit cards with realistic reward structures
 
-All logic is internal with no external APIs.
-
-### High-Level Feature List
-- User spending input UI  
-- Credit score input  
-- 5/24 eligibility engine  
-- Existing card tracking  
-- Reward calculation engine  
-- Best card per category  
-- Best overall card combo  
-- Dashboard interface  
-- Simple backend API (Node.js)
+**Technology Stack:**
+- **Frontend:** HTML5, Tailwind CSS, Vanilla JavaScript (ES6+)
+- **Backend:** Node.js with Express.js
+- **Data Storage:** JSON-based (no external database required)
+- **Testing:** Jest, manual testing
 
 ## Evidence / Artifacts
-- Team repo created  
-- Project board configured  
-- Initial notes and design ideas added to the repo (non-capstone files)
+
+- [Detailed Proposal Document](https://github.com/avazquezmaldonado/CardMatch/blob/main/docs/capstone-01.md)
+- [Team GitHub Repository](https://github.com/avazquezmaldonado/CardMatch)
+- [Project README with Overview](https://github.com/avazquezmaldonado/CardMatch#readme)
 
 ## Notes & Risks
-- Credit card data is simplified  
-- No API integrations (scope-controlled)  
-- Rewards estimates are approximate  
-- Scope is designed for a single developer
-  
-- Initial planning notes in CardMatch repo  
 
-## Notes & Risks
-- Real credit card data will be simplified  
-- No API integrations (intentionally for scope control)  
-- Rewards calculations are estimates, not financial advice  
-- Scope designed for one developer  
+- **Risk:** Solo project (mitigated by clear scope and proven technologies)
+- **Advantage:** No team coordination overhead
+- **Technical:** All technologies chosen are well-documented and suitable for capstone
+- **Data:** No external APIs required—reduces dependencies and complexity
+- **Scope:** Conservative feature set ensures completion within timeline
