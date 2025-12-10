@@ -4,7 +4,7 @@
 
 - **Name:** <Angel Vazquez Maldonado>
 - **Project Board (Project v2):** <https://github.com/users/avazquezmaldonado/projects/1>
-- **Live Portfolio (GitHub Pages):** <https://avazquezmaldonado.github.io/csci-4208-portfolio-2025/>
+- **Live Portfolio (GitHub Pages):** <https://avazquezmaldonado.github.io/csci4208-portfolio-2025//>
 
 ---
 
@@ -122,5 +122,6 @@
 ---
 
 <sub>Last updated: <!-- yyyy-mm-dd --> </sub>
+
 
 
