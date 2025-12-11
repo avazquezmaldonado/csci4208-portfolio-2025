@@ -1,4 +1,4 @@
-# 🎓 Course Portfolio — <Your Name>
+# 🎓 Course Portfolio — <Angel Vazquez Maldonado>
 
 > Personal progress page for CSCI4208. Keep this file updated as you complete labs, projects, and capstone milestones.
 
@@ -122,6 +122,7 @@
 ---
 
 <sub>Last updated: <!-- yyyy-mm-dd --> </sub>
+
 
 
 
