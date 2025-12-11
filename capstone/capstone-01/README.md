@@ -11,7 +11,7 @@
 - Problem statement and proposed solution
 - Initial scope and feature list
 - Technology stack selection justified
-- Timeline and milestones overview
+- Timeline and milestones overviewi mnight t
 
 ## Summary (what we produced)
 
@@ -32,14 +32,19 @@
 - Monthly spending by category (groceries, dining, travel, other)
 - Real-time scoring and recommendations
 - Eligibility filtering (credit score thresholds, Chase 5/24 rule)
-- Export recommendations as JSON
-- Support for 20+ credit cards with realistic reward structures
+- Export/import recommendations and full profile as JSON
+- Support for 22 credit cards with realistic reward structures
+- Visual card display with actual credit card images
+- Reward category badges (5x Dining, 6x Groceries)
+- Annual fee transparency and card tier labeling
+- Custom logo and branding
+- Privacy-first architecture (no server-side data storage)
 
 **Technology Stack:**
-- **Frontend:** HTML5, Tailwind CSS, Vanilla JavaScript (ES6+)
+- **Frontend:** HTML5, Tailwind CSS, Vanilla JavaScript (ES6+), D3.js for charts
 - **Backend:** Node.js with Express.js
 - **Data Storage:** JSON-based (no external database required)
-- **Testing:** Jest, manual testing
+- **Testing:** Jest for backend, manual testing for frontend
 
 ## Evidence / Artifacts
 
